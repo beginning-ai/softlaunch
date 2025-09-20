@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="author" content="Beginning AI">
-  <title>Beginnings</title>
+  <title>Signup Success | Beginnings</title>
   <link rel="icon" href="./favicon.ico" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,21 +12,16 @@
   <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
-  <main id="index">
-    <div id="hero"></div>
-    <div id="signup">
-      <div>
-        <header>
-          <h1>Beginnings</h1>
-          <h2>Customize and talk to your own AI waifus</h2>
-        </header>
-        <div>Join the waiting list & get early access</div>
-        <form action="/signup" method="post">
-          <input type="email" id="email" name="email" placeholder="Email" required />
-          <input type="submit" value="Sign Up" />
-        </form>
-      </div>
-    </div>
+  <main id="success">
+    <h1>Sign Up Successful!</h1>
+    <p>A confirmation email has been sent to <b id="email-placeholder"></b>.</p>
   </main>
+
+  <script>
+    const params = new URLSearchParams(document.location.search);
+    const email = params.get("email");
+    const placeholder = document.getElementById("email-placeholder");
+    placeholder.innerHTML = email ? decodeURIComponent(email) : "<i>nowhere</i>";
+  </script>
 </body>
 </html>

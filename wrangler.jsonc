@@ -5,4 +5,11 @@
   "dev": {
     "local_protocol": "https",
   },
+  "d1_databases": [
+    {
+      "binding": "softlaunch_d1",
+      "database_name": "softlaunch_d1",
+      "database_id": "207dabdc-772c-4e80-a96d-0acdf24bba70"
+    }
+  ],
 }

@@ -30,8 +30,6 @@ body {
 main {
   display: flex;
   background-color: white;
-  width: 800px;
-  height: 600px;
   border-radius: 20px;
   overflow: hidden;
 }
@@ -94,4 +92,21 @@ input[type=email] {
 
 input[type=submit] {
   cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #ccc;
+}
+
+#index {
+  width: 800px;
+  height: 600px;
+}
+
+#success {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
 }
