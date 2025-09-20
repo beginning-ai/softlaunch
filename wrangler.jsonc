@@ -1,0 +1,8 @@
+{
+  "name": "softlaunch",
+  "pages_build_output_dir": "./dist",
+  "compatibility_date": "2025-09-20",
+  "dev": {
+    "local_protocol": "https",
+  },
+}
