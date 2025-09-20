@@ -25,6 +25,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: hsl(35, 100%, 5%);
 }
 
 main {
@@ -47,7 +48,7 @@ main {
 #signup {
   flex: 4;
   padding: 2rem;
-  background-color: #fafafa;
+  background-color: #FBFBFB;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -60,7 +61,6 @@ header {
 
 h1 {
   font-size: 1.8rem;
-  margin: 0;
   font-weight: 500;
 }
 
@@ -91,11 +91,15 @@ input[type=email] {
 
 
 input[type=submit] {
+  background-color: hsl(35, 100%, 75%);
   cursor: pointer;
+  color: hsl(35, 100%, 10%);
+  font-weight: 600;
 }
 
 input[type=submit]:hover {
-  background-color: #ccc;
+  background-color: hsl(35, 100%, 84%);
+  color: hsl(35, 100%, 20%);
 }
 
 #index {
