@@ -10,7 +10,7 @@ export const onRequestPost = async (context) => {
     return new Response("Does not look like an email!", { status: 400 });
   }
   const { success } = await context.env.softlaunch_d1
-    .prepare("INSERT INTO signup (email) VALUES (?)")
+    .prepare("INSERT INTO signup (email) VALUES (?) ON CONFLICT (email) DO NOTHING")
     .bind(email)
     .run();
   if (!success) {
