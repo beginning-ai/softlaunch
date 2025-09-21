@@ -39,7 +39,7 @@ main {
 
 #hero {
   flex: 1 1 400px;
-  background: url(hero.jpg) no-repeat center top;
+  background: url(hero.webp) no-repeat center top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -195,7 +195,7 @@ input[type=submit]:hover {
 
   #hero {
     flex: 3;
-    background: url(hero.jpg) no-repeat center center;
+    background: url(hero.webp) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
