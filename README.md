@@ -6,6 +6,7 @@ Stack:
 * HTML/CSS
 * Cloudflare Pages Functions (serverless email sign up handler)
 * Cloudflare D1 (store emails sign ups)
+* Zoho ZeptoMail (confirmation email)
 
 ## Local dev
 
