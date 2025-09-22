@@ -26,7 +26,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: hsl(205, 100%, 99%);
+  font-weight: 500;
+  color: white;
 }
 
 main {
@@ -71,7 +72,6 @@ h2 {
   font-size: 1.1rem;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
-  font-weight: 400;
 }
 
 p {
@@ -96,15 +96,17 @@ input[type=email] {
 }
 
 input[type=submit] {
-  background-color: hsl(35, 100%, 75%);
+  background-color: hsl(10, 69%, 52%);
   cursor: pointer;
-  color: hsl(35, 100%, 10%);
+  color: hsl(10, 69%, 98%);
   font-weight: 600;
 }
 
 input[type=submit]:hover {
-  background-color: hsl(35, 100%, 84%);
-  color: hsl(35, 100%, 20%);
+  background-color: hsl(10, 69%, 55%);
+  color: hsl(10, 69%, 99%);
+  transform: translateY(-1px);
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2), 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 #index {
@@ -121,6 +123,8 @@ input[type=submit]:hover {
   padding: 1rem;
   max-width: 600px;
   text-align: center;
+  max-height: min-content;
+  gap: 1rem;
 }
 
 .liquid-glass-wrapper {
@@ -161,16 +165,12 @@ input[type=submit]:hover {
 .liquid-glass-content {
   z-index: 3;
   flex: 1;
-  padding: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
   gap: 1rem;
-}
-
-.twitter-follow-button {
-  margin: 1rem 0;
+  padding: 1rem;
 }
 
 @media (min-width: 769px) {
@@ -185,7 +185,7 @@ input[type=submit]:hover {
 
   #index {
     width: 800px;
-    min-height: 600px;
+    min-height: 450px;
   }
 
   #signup {
@@ -202,11 +202,11 @@ input[type=submit]:hover {
     background-size: cover;
   }
 
-  #success {
-    padding: 2rem;
+  #signup .liquid-glass-content {
+    gap: 2rem;
   }
 
-  .liquid-glass-content {
-    gap: 2rem;
+  #success {
+    padding: 2rem;
   }
 }
